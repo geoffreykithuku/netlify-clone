@@ -40,14 +40,30 @@ const Hero = () => {
           </span>
         </div>
       </div>
-      <div className="bg-[#1F3397] w-full max-w-[800px] rounded-2xl h-[400px] border border-[#ccc1c1] absolute text-white mx-auto bottom-[-200px] flex justify-center items-center overflow-hidden">
-        <div className="relative z-10 text-white">
-          <img
-            src="https://www.netlify.com/images/home/composable-platform-stack-shells.svg"
-            alt="Shells"
-            className="w-full object-contain z-10"
-          />
-          <p className="z-20">Marketing</p>
+      <div
+        className="bg-[#1F3397] w-full max-w-[800px] rounded-2xl h-[400px] border border-[#ccc1c1] absolute text-white mx-5 bottom-[-200px] flex justify-center items-center overflow-hidden"
+        style={{
+          backgroundImage: `url("https://www.netlify.com/images/home/composable-platform-stack-shells.svg")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="relative w-full h-full p-5 flex justify-between items-center flex-col sm:flex-row ">
+          <span className="sm:absolute top-10 left-10 bg-[#dde481e8] text-[#2c2c2c] px-3 py-2 rounded font-semibold">
+            Marketing
+          </span>
+          <span className="sm:absolute top-20 right-20 bg-[#e3e4d4e8] text-[#2c2c2c] px-3 py-2 rounded font-semibold">
+            Operations
+          </span>
+          <span className="sm:absolute bottom-10 left-40 bg-[#81a9e4e8] text-[#2c2c2c] px-3 py-2 rounded font-semibold">
+            Engineering
+          </span>
+          <span className="sm:absolute bottom-10 right-24 bg-[#9381e4e8] text-[#2c2c2c] px-3 py-2 rounded font-semibold">
+            Security
+          </span>
+          <span className="sm:absolute top-40 right-80  bg-[#242422e8] text-[#f7f7f7] px-3 py-2 rounded font-semibold">
+            Design
+          </span>
         </div>
       </div>
     </div>
