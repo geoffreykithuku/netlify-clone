@@ -6,3 +6,7 @@
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
 }
+
+:root {
+  --bg-primary: rgb(46, 81, 237);
+}
