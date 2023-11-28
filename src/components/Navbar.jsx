@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { Menu, Search, X, ArrowRight, ChevronDown } from "lucide-react";
 import Alert from "./Alert";
-
+import logo from "../assets/logo.png";
 const Navbar = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   return (
     <nav className="bg-white flex mx-auto items-center font-semibold text-lg  backdrop-blur-sm  bg-opacity-90 z-10 flex-col  w-full top-0 sticky">
       <Alert />
-      <div className="px-5 flex justify-between items-center w-full lg:px-[60px] relative py-[18px] ">
-        <p>Logo</p>
+      <div className="px-5 flex justify-between items-center w-full lg:px-[60px] relative py-1">
+        <span>
+          <img src={logo} alt="" className="w-full" />
+        </span>
         <ul className="xl:flex items-start justify-start xl:gap-8 hidden gap-6">
           <li className="flex items-center gap-1">
             <p>Platform</p>

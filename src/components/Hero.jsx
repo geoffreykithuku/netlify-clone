@@ -1,5 +1,6 @@
 import React from "react";
-
+// import hero from '../assets/hero.svg'
+import about from "../assets/about.png";
 const Hero = () => {
   return (
     <div className="flex justify-center items-center relative">
@@ -48,11 +49,14 @@ const Hero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="relative w-full h-full p-5 flex justify-between items-center flex-col sm:flex-row ">
-          <span className="sm:absolute top-10 left-10 bg-[#dde481e8] text-[#2c2c2c] px-3 py-2 rounded font-semibold">
+        {/* <div className="relative w-full h-full p-5 flex justify-between items-center flex-wrap gap-8 ">
+          <span className="hidden md:block mx-auto left-[38%]  absolute w-[200px]">
+            <img src={hero} alt="" className="w-full object-cover" />
+          </span>
+          <span className="sm:absolute top-40 left-10 bg-[#dde481e8] text-[#2c2c2c] px-3 py-2 rounded font-semibold">
             Marketing
           </span>
-          <span className="sm:absolute top-20 right-20 bg-[#e3e4d4e8] text-[#2c2c2c] px-3 py-2 rounded font-semibold">
+          <span className="sm:absolute top-40 right-20 bg-[#e3e4d4e8] text-[#2c2c2c] px-3 py-2 rounded font-semibold">
             Operations
           </span>
           <span className="sm:absolute bottom-10 left-40 bg-[#81a9e4e8] text-[#2c2c2c] px-3 py-2 rounded font-semibold">
@@ -61,10 +65,11 @@ const Hero = () => {
           <span className="sm:absolute bottom-10 right-24 bg-[#9381e4e8] text-[#d8cdcd] px-3 py-2 rounded font-semibold">
             Security
           </span>
-          <span className="sm:absolute top-40 right-80  bg-[#242422e8] text-[#ffffff] px-3 py-2 rounded font-semibold">
+          <span className="sm:absolute bottom-20 right-80  bg-[#b4e20e] text-[#ffffff] px-3 py-2 rounded font-semibold">
             Design
           </span>
-        </div>
+        </div> */}
+        <img src={about} alt="" />
       </div>
     </div>
   );

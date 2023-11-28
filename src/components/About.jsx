@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="mt-[250px] flex justify-center items-center text-center flex-col gap-8 mb-20">
-      <h1 className='font-black text-5xl mt-3'>Netlify Composable Web Platform</h1>
+    <div className="mt-[250px] flex justify-center items-center text-center flex-col gap-8 mb-20 px-5">
+      <h1 className='font-black text-3xl md:text-5xl mt-3'>Netlify Composable Web Platform</h1>
       <p className='text-lg max-w-[650px]'>
         Streamlined orchestration, simplified and unified workflows, and
         real-time updates across infrastructure, workflows, websites and teams —
