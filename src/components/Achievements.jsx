@@ -5,8 +5,9 @@ import { Slash } from "lucide-react";
 import profile from "../assets/profile.jpg";
 const Achievements = () => {
   return (
+    <div className="mb-[100px]">
     <div
-      className="text-white pt-20 px-3 sm:px-5 overflow-visible h-full md:max-h-[80vh] max-h-[170vh]"
+      className="text-white pt-20  px-3 sm:px-5 overflow-visible h-[155vw] sm:h-[100vw] md:h-[80vw] lg:h-[40vw] xl:h-[30vw]"
       style={{
         backgroundImage: "linear-gradient(to right, #1B215E, #233395, #2C4DE1)",
         backgroundSize: "cover",
@@ -31,7 +32,7 @@ const Achievements = () => {
         </span>
       </div>
 
-      <div className="bg-white rounded-3xl custom-shadow ] md:mx-24 w-fit md:p-10 p-5">
+      <div className="bg-white rounded-3xl custom-shadow  md:mx-10 lg:mx-24 w-fit md:p-10 p-5 mb-20">
         <div className="flex justify-start items-center">
           <span className="max-w-[150px] max-h-[100px] w-full h-full">
             <img
@@ -51,7 +52,7 @@ const Achievements = () => {
             />
           </span>
         </div>
-        <p className="text-black text-xl md:text-2xl my-5 md:leading-10 leading-8 font-medium mb-5">
+        <p className="text-black text-xl sm:text-2xl my-5 md:leading-10 leading-8 font-medium mb-5">
           "We aspire to be the most player-focused gaming company in the world,
           and Netlify absolutely carries the same spirit of aspiring to be the
           most developer-focused technology company in the world…{" "}
@@ -75,7 +76,8 @@ const Achievements = () => {
           </span>
         </div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 };
 

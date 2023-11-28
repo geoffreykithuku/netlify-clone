@@ -5,6 +5,7 @@ import Solutions from "./components/Solutions";
 import Partners from "./components/Partners";
 import Achievements from "./components/Achievements";
 import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Partners />
       <Achievements />
       <CTA />
+      <Footer />
     </div>
   );
 }
