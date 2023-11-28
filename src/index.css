@@ -12,7 +12,7 @@
 }
 
 .custom-shadow {
-  box-shadow: 7px 8px 66px 4px rgba(169, 167, 180, 0.75);
--webkit-box-shadow: 7px 8px 66px 4px rgba(157, 142, 223, 0.75);
--moz-box-shadow: 7px 8px 66px 4px rgba(150, 135, 216, 0.75);
+  box-shadow: 7px 8px 40px 4px rgba(214, 213, 221, 0.5);
+-webkit-box-shadow: 7px 8px 40px 4px rgba(210, 206, 224, 0.5);
+-moz-box-shadow: 7px 8px 40px 4px rgba(177, 172, 202, 0.5);
 }
