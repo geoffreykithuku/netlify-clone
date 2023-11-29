@@ -4,11 +4,12 @@ import Alert from "./Alert";
 import logo from "../assets/logo.png";
 import PlatformDropdown from "./PlatformDropdown";
 import SolutionsDropdown from "./SolutionsDropdown";
+import StartDropdown from "./StartDropdown";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
-
+  const [dropdown3, setDropdown3] = useState(false);
   let timeoutId;
 
   const handleMouseEnter = () => {
@@ -49,9 +50,15 @@ const Navbar = () => {
             {dropdown2 && <SolutionsDropdown />}
           </li>
           <li>Integrations</li>
-          <li className="flex items-center gap-1">
+          <li
+            className="flex items-center gap-1"
+            onMouseEnter={() => setDropdown3(true)}
+            onMouseLeave={() => setDropdown3(false)}
+          >
             <p>Start Building</p>
             <ChevronDown />
+
+            {dropdown3 && <StartDropdown />}
           </li>
           <li>Docs</li>
           <li>Pricing</li>
