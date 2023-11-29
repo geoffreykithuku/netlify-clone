@@ -21,14 +21,14 @@ const PlatformDropdown = () => {
         <div className="bg-white w-full p-6">
           <h1 className="text-sm text-[#2e2727] mb-5"> KEY FEATURES</h1>
           <ul className="flex justify-between gap-8 text-sm underline ">
-            <span className="flex flex-col gap-4 w-full">
+            <span className="flex flex-col gap-3 w-full">
               <li>Enterprise team Management</li>
               <li>SDK</li>
               <li>Edge Funtions</li>
               <li>Deploy Previews</li>
               <li>Forms</li>
             </span>
-            <span className="flex flex-col gap-4 w-full">
+            <span className="flex flex-col gap-3 w-full">
               <li>Identity</li>
               <li>Security</li>
               <li>Analytics</li>

@@ -3,9 +3,11 @@ import { Menu, Search, X, ArrowRight, ChevronDown } from "lucide-react";
 import Alert from "./Alert";
 import logo from "../assets/logo.png";
 import PlatformDropdown from "./PlatformDropdown";
+import SolutionsDropdown from "./SolutionsDropdown";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const [dropdown2, setDropdown2] = useState(false);
 
   let timeoutId;
 
@@ -37,9 +39,14 @@ const Navbar = () => {
             {dropdown && <PlatformDropdown />}
           </li>
 
-          <li className="flex items-center gap-1">
+          <li
+            className="flex items-center gap-1"
+            onMouseEnter={() => setDropdown2(true)}
+            onMouseLeave={() => setDropdown2(false)}
+          >
             <p>Solutions</p>
             <ChevronDown />
+            {dropdown2 && <SolutionsDropdown />}
           </li>
           <li>Integrations</li>
           <li className="flex items-center gap-1">
