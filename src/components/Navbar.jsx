@@ -2,21 +2,41 @@ import React, { useState } from "react";
 import { Menu, Search, X, ArrowRight, ChevronDown } from "lucide-react";
 import Alert from "./Alert";
 import logo from "../assets/logo.png";
+import PlatformDropdown from "./PlatformDropdown";
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
+  let timeoutId;
+
+  const handleMouseEnter = () => {
+    clearTimeout(timeoutId);
+    setDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutId = setTimeout(() => {
+      setDropdown(false);
+    }, 200);
+  };
   return (
-    <nav className="bg-white flex mx-auto items-center font-semibold text-lg  backdrop-blur-sm  bg-opacity-90 z-10 flex-col  w-full top-0 sticky">
+    <nav className="bg-white flex mx-auto items-center font-semibold text-base  backdrop-blur-sm  bg-opacity-90 z-10 flex-col  w-full top-0 sticky">
       <Alert />
       <div className="px-5 flex justify-between items-center w-full lg:px-[60px] relative py-1">
-        <span>
+        <span className="me-6">
           <img src={logo} alt="" className="w-full" />
         </span>
-        <ul className="xl:flex items-start justify-start xl:gap-8 hidden gap-6">
-          <li className="flex items-center gap-1">
+        <ul className="xl:flex items-start justify-start hidden gap-5 me-auto">
+          <li
+            className="flex items-center gap-1"
+            onMouseEnter={() => handleMouseEnter()}
+            onMouseLeave={() => handleMouseLeave()}
+          >
             <p>Platform</p>
             <ChevronDown />
+            {dropdown && <PlatformDropdown />}
           </li>
+
           <li className="flex items-center gap-1">
             <p>Solutions</p>
             <ChevronDown />
@@ -29,11 +49,11 @@ const Navbar = () => {
           <li>Docs</li>
           <li>Pricing</li>
         </ul>
-        <span className="flex lg:gap-6 gap-5 ml-5 justify-center items-center">
+        <span className="flex gap-5 ml-5 justify-center items-center">
           <Search size={18} />
           <p className="hidden xl:block">Contact</p>
           <button className="flex-shrink-0">Sign In</button>
-          <button className="hidden xl:block bg-[var(--bg-primary)] text-white px-3 py-1 rounded">
+          <button className="hidden xl:block bg-[var(--bg-primary)] text-white px-3 py-2 rounded">
             Sign Up
           </button>
           <span className="xl:hidden">
@@ -45,6 +65,7 @@ const Navbar = () => {
           </span>
         </span>
       </div>
+
       {/* mobile menu */}
       {show && (
         <div className="xl:hidden w-full absolute top-[60px] lg:px-12 bg-white pb-5 z-20">

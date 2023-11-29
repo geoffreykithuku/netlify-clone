@@ -16,3 +16,8 @@
 -webkit-box-shadow: 7px 8px 40px 4px rgba(210, 206, 224, 0.5);
 -moz-box-shadow: 7px 8px 40px 4px rgba(177, 172, 202, 0.5);
 }
+
+
+.custom-shadow-2 {
+  box-shadow: 4px 4px 14px 3px rgba(173, 163, 163, 0.25);
+}

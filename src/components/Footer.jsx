@@ -46,8 +46,8 @@ const Footer = () => {
         </span>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-5 mt-10 mx-auto sm:mx-10 md:mx-20 gap-10  justify-center">
-        <div className="max-w-[200px] w-full">
+      <div className="grid grid-cols-1 w-full md:grid-cols-5 pt-10 mx-auto sm:px-10 md:px-20 gap-10  justify-center">
+        <div className="border-b md:border-b-0 w-full">
           <h1 className="font-bold mb-5 ">
             <span
               onClick={() => handleToggle("Why Netlify")}
@@ -70,7 +70,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="max-w-[200px] w-full">
+        <div className="border-b md:border-b-0 w-full">
           <h1 className="font-bold mb-5">
             <span
               onClick={() => handleToggle("Products")}
@@ -96,7 +96,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="max-w-[200px] w-full">
+        <div className="border-b md:border-b-0 w-full">
           <h1 className="font-bold mb-5">
             <span
               onClick={() => handleToggle("Explore")}
@@ -121,7 +121,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="max-w-[180px] w-full">
+        <div className="border-b md:border-b-0 w-full">
           <h1 className="font-bold mb-5">
             <span
               onClick={() => handleToggle("Company")}
@@ -147,7 +147,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="border-b md:border-b-0 w-full">
           <h1 className="font-bold mb-5">
             <span
               onClick={() => handleToggle("Contact Us")}
@@ -173,7 +173,7 @@ const Footer = () => {
 
       <div className="flex justify-center items-start gap-5 mt-20 flex-col mx-auto">
         <p>Stay up to date with Netlify news</p>
-        <span className="flex gap-5 flex-wrap"> 
+        <span className="flex gap-5 flex-wrap">
           <input
             className="text-lg px-5 py-2 rounded-md border border-[#466967] "
             type="text"
@@ -184,24 +184,21 @@ const Footer = () => {
             Subscribe
           </button>
         </span>
-          </div>
-          <div className="w-full mt-20">
-              <hr />
-              <div className="flex flex-col gap-5 md:flex-row justify-between mt-2 items-center">
-                  <ul className="flex gap-6 flex-wrap">
-                      <li>Trust Center</li>
-                      <li>Privacy</li>
-                      <li>Security</li>
-                      <li>GDPR/CCPA</li>
-                      <li>Abuse</li>
-                      <li>Cookie Settings</li>
-
-                  </ul>
-                  <span className="flex-shrink-0">
-                      &copy; 2023 Netlify
-                  </span>
-              </div>
-          </div>
+      </div>
+      <div className="w-full mt-20">
+        <hr />
+        <div className="flex flex-col gap-5 md:flex-row justify-between mt-2 items-center">
+          <ul className="flex gap-6 flex-wrap">
+            <li>Trust Center</li>
+            <li>Privacy</li>
+            <li>Security</li>
+            <li>GDPR/CCPA</li>
+            <li>Abuse</li>
+            <li>Cookie Settings</li>
+          </ul>
+          <span className="flex-shrink-0">&copy; 2023 Netlify</span>
+        </div>
+      </div>
     </div>
   );
 };
